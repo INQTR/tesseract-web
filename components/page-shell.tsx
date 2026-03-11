@@ -1,5 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
-import { Command, Download } from "lucide-react";
+import { Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export function PageShell({ children }: { children: React.ReactNode }) {
@@ -10,9 +11,13 @@ export function PageShell({ children }: { children: React.ReactNode }) {
       {/* Navigation */}
       <nav className="relative z-50 flex items-center justify-between px-6 py-6 max-w-7xl mx-auto">
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-linear-to-br from-zinc-100 to-zinc-400 flex items-center justify-center">
-            <Command className="w-5 h-5 text-zinc-900" />
-          </div>
+          <Image
+            src="/icon-64x64.png"
+            alt="Tesseract Agent"
+            width={32}
+            height={32}
+            className="rounded-lg"
+          />
           <span className="text-xl font-medium tracking-tight">tesseract</span>
         </Link>
 
@@ -47,9 +52,13 @@ export function PageShell({ children }: { children: React.ReactNode }) {
       <footer className="relative z-10 w-full border-t border-white/5 py-12 px-6 bg-[#030303]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-md bg-linear-to-br from-zinc-100 to-zinc-400 flex items-center justify-center">
-              <Command className="w-3.5 h-3.5 text-zinc-900" />
-            </div>
+            <Image
+              src="/icon-64x64.png"
+              alt="Tesseract Agent"
+              width={24}
+              height={24}
+              className="rounded-md"
+            />
             <span className="text-sm font-medium tracking-tight text-zinc-300">
               tesseract
             </span>

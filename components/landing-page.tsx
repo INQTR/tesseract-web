@@ -2,15 +2,13 @@
 
 import { motion } from "framer-motion";
 import {
-  Command,
   Mic,
   Volume2,
   Shield,
   Apple,
-  CheckCircle2,
   Download,
   HardDrive,
-  Image,
+  Image as ImageIcon,
   Bot,
   Keyboard,
   WifiOff,
@@ -20,6 +18,7 @@ import {
   Eye,
   Lock,
 } from "lucide-react";
+import NextImage from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
@@ -46,9 +45,13 @@ export function LandingPage() {
       {/* Navigation */}
       <nav className="relative z-50 flex items-center justify-between px-6 py-6 max-w-7xl mx-auto">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-linear-to-br from-zinc-100 to-zinc-400 flex items-center justify-center">
-            <Command className="w-5 h-5 text-zinc-900" />
-          </div>
+          <NextImage
+            src="/icon-64x64.png"
+            alt="Tesseract Agent"
+            width={32}
+            height={32}
+            className="rounded-lg"
+          />
           <span className="text-xl font-medium tracking-tight">
             tesseract
           </span>
@@ -239,7 +242,7 @@ export function LandingPage() {
               className="flex flex-col p-8 rounded-3xl bg-white/[0.02] border border-white/5"
             >
               <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6">
-                <Image className="w-6 h-6 text-zinc-300" />
+                <ImageIcon className="w-6 h-6 text-zinc-300" />
               </div>
               <h3 className="text-2xl font-medium mb-3 tracking-tight">
                 Image Generation
@@ -251,7 +254,7 @@ export function LandingPage() {
               </p>
               <div className="flex flex-wrap gap-3 mt-auto">
                 <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 text-xs text-zinc-400">
-                  <Image className="w-3.5 h-3.5" /> Text-to-image
+                  <ImageIcon className="w-3.5 h-3.5" /> Text-to-image
                 </span>
                 <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/5 text-xs text-zinc-400">
                   <Eye className="w-3.5 h-3.5" /> No content filters
@@ -417,9 +420,13 @@ export function LandingPage() {
       <footer className="relative z-10 w-full border-t border-white/5 py-12 px-6 bg-[#030303]">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2">
-            <div className="w-6 h-6 rounded-md bg-linear-to-br from-zinc-100 to-zinc-400 flex items-center justify-center">
-              <Command className="w-3.5 h-3.5 text-zinc-900" />
-            </div>
+            <NextImage
+              src="/icon-64x64.png"
+              alt="Tesseract Agent"
+              width={24}
+              height={24}
+              className="rounded-md"
+            />
             <span className="text-sm font-medium tracking-tight text-zinc-300">
               tesseract
             </span>

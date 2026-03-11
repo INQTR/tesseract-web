@@ -1,6 +1,6 @@
 # Tesseract
 
-Landing page for **Tesseract** — a personal AI agent that runs on your Mac. Built to help you thrive, stay accountable, and build the life you actually want.
+Marketing site for [Tesseract Agent](https://thetesseract.app) — a privacy-focused AI assistant for macOS. Voice dictation, text-to-speech, image generation, and a local AI agent, all running on-device via Apple Silicon.
 
 ## Tech Stack
 
@@ -8,9 +8,8 @@ Landing page for **Tesseract** — a personal AI agent that runs on your Mac. Bu
 - [React](https://react.dev) 19
 - [Tailwind CSS](https://tailwindcss.com) 4
 - [Framer Motion](https://motion.dev)
-- [shadcn/ui](https://ui.shadcn.com)
 
-## Getting Started
+## Development
 
 ```bash
 npm install
